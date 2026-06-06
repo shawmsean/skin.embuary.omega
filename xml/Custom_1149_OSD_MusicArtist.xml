@@ -11,52 +11,52 @@
         </control>
 
         <control type="group">
-            <left>160</left>
-            <right>160</right>
-            <height>1440</height>
+            <left>80</left>
+            <right>80</right>
+            <height>720</height>
             <centertop>50%</centertop>
 
             <control type="group">
-                <height>120</height>
+                <height>60</height>
                 <control type="label">
-                    <left>0</left><top>0</top><width>100%</width><height>80</height>
+                    <left>0</left><top>0</top><width>100%</width><height>40</height>
                     <font>Reg37</font><textcolor>text_white</textcolor>
                     <label>$INFO[Window(10000).Property(nc_current_artist_name)]</label>
                 </control>
             </control>
 
             <control type="group">
-                <top>140</top>
+                <top>70</top>
                 <bottom>0</bottom>
 
                 <control type="group">
                     <left>0</left>
                     <centertop>50%</centertop>
-                    <height>400</height>
-                    <width>400</width>
+                    <height>200</height>
+                    <width>200</width>
                     <control type="image">
-                        <width>400</width>
-                        <height>400</height>
+                        <width>200</width>
+                        <height>200</height>
                         <texture background="true">$INFO[Window(10000).Property(nc_current_artist_pic)]</texture>
                         <aspectratio>scale</aspectratio>
                         <visible>!String.IsEmpty(Window(10000).Property(nc_current_artist_pic))</visible>
                     </control>
                     <control type="image">
-                        <width>400</width>
-                        <height>400</height>
+                        <width>200</width>
+                        <height>200</height>
                         <texture colordiffuse="panel_background">common/box.png</texture>
                         <visible>String.IsEmpty(Window(10000).Property(nc_current_artist_pic))</visible>
                     </control>
                 </control>
 
                 <control type="group">
-                    <left>440</left>
+                    <left>220</left>
                     <right>0</right>
                     <centertop>50%</centertop>
-                    <height>400</height>
+                    <height>200</height>
                     <control type="label">
                         <left>0</left>
-                        <height>80</height>
+                        <height>40</height>
                         <font>Reg37</font>
                         <textcolor>text_white</textcolor>
                         <label>$INFO[Window(10000).Property(nc_current_artist_name)]</label>
@@ -64,7 +64,7 @@
                     </control>
                     <control type="textbox">
                         <left>0</left>
-                        <top>100</top>
+                        <top>50</top>
                         <bottom>0</bottom>
                         <font>Reg20</font>
                         <textcolor>text_sublabel</textcolor>
