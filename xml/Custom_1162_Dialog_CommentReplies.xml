@@ -48,100 +48,100 @@
                 <ondown condition="String.IsEqual(Container(7001).ListItem.Property(is_trigger),1)">Container.Update($INFO[Container(7001).ListItem.Property(next_page)],replace)</ondown>
                 <content>$INFO[Window(10000).Property(nc_reply_content_url)]</content>
 
-                <itemlayout width="1760" height="60">
+                <itemlayout width="1760" height="100">
                     <control type="image">
                         <texture colordiffuse="panel_background" border="6">common/box.png</texture>
                     </control>
                     <control type="image">
                         <visible>!String.IsEqual(ListItem.Property(is_trigger),1)</visible>
-                        <left>6</left><top>6</top><width>28</width><height>28</height>
+                        <left>8</left><top>8</top><width>44</width><height>44</height>
                         <texture background="true">$INFO[ListItem.Icon]</texture>
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="label">
                         <visible>!String.IsEqual(ListItem.Property(is_trigger),1)</visible>
-                        <left>40</left><top>4</top><width>500</width><height>18</height>
+                        <left>60</left><top>6</top><width>500</width><height>20</height>
                         <font>Reg18</font><textcolor>text_white</textcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
                         <visible>!String.IsEqual(ListItem.Property(is_trigger),1)</visible>
-                        <right>10</right><top>4</top><width>auto</width><height>18</height>
+                        <right>10</right><top>6</top><width>auto</width><height>20</height>
                         <font>Reg16</font><textcolor>softgrey</textcolor><align>right</align>
                         <label>$INFO[ListItem.Property(reply_floor),#,]</label>
                     </control>
                     <control type="label">
                         <visible>!String.IsEqual(ListItem.Property(is_trigger),1)</visible>
-                        <left>40</left><top>22</top><width>400</width><height>14</height>
+                        <left>60</left><top>28</top><width>400</width><height>18</height>
                         <font>Reg16</font><textcolor>text_sublabel</textcolor>
                         <label>$INFO[ListItem.Property(reply_time)]$INFO[ListItem.Property(reply_location), | ,]</label>
                     </control>
                     <control type="label">
                         <visible>!String.IsEqual(ListItem.Property(is_trigger),1)</visible>
-                        <right>10</right><top>22</top><width>auto</width><height>14</height>
+                        <right>10</right><top>28</top><width>auto</width><height>18</height>
                         <font>Reg16</font><textcolor>text_sublabel</textcolor><align>right</align>
                         <label>$INFO[ListItem.Property(reply_liked),&#x2764; ,]</label>
                     </control>
                     <control type="textbox">
                         <visible>!String.IsEqual(ListItem.Property(is_trigger),1)</visible>
-                        <left>40</left><top>36</top><right>10</right><bottom>4</bottom>
+                        <left>60</left><top>48</top><right>10</right><bottom>6</bottom>
                         <font>Reg16</font><textcolor>white</textcolor>
                         <label>$INFO[ListItem.Property(reply_content)]</label>
                         <autoscroll delay="6000" time="3000" repeat="10000">!Control.HasFocus(7001)</autoscroll>
                     </control>
                     <control type="label">
                         <visible>String.IsEqual(ListItem.Property(is_trigger),1)</visible>
-                        <left>0</left><top>0</top><width>1760</width><height>60</height>
+                        <left>0</left><top>0</top><width>1760</width><height>100</height>
                         <font>Reg18</font><textcolor>text_sublabel</textcolor>
                         <align>center</align><aligny>center</aligny>
                         <label>加载更多</label>
                     </control>
                 </itemlayout>
 
-                <focusedlayout width="1760" height="60">
+                <focusedlayout width="1760" height="100">
                     <control type="image">
                         <texture colordiffuse="$VAR[PlayerAccentColor]" border="6">common/box.png</texture>
                     </control>
                     <control type="image">
                         <visible>!String.IsEqual(ListItem.Property(is_trigger),1)</visible>
-                        <left>6</left><top>6</top><width>28</width><height>28</height>
+                        <left>8</left><top>8</top><width>44</width><height>44</height>
                         <texture background="true">$INFO[ListItem.Icon]</texture>
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="label">
                         <visible>!String.IsEqual(ListItem.Property(is_trigger),1)</visible>
-                        <left>40</left><top>4</top><width>500</width><height>18</height>
+                        <left>60</left><top>6</top><width>500</width><height>20</height>
                         <font>Reg18</font><textcolor>selected</textcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
                         <visible>!String.IsEqual(ListItem.Property(is_trigger),1)</visible>
-                        <right>10</right><top>4</top><width>auto</width><height>18</height>
+                        <right>10</right><top>6</top><width>auto</width><height>20</height>
                         <font>Reg16</font><textcolor>selected</textcolor><align>right</align>
                         <label>$INFO[ListItem.Property(reply_floor),#,]</label>
                     </control>
                     <control type="label">
                         <visible>!String.IsEqual(ListItem.Property(is_trigger),1)</visible>
-                        <left>40</left><top>22</top><width>400</width><height>14</height>
+                        <left>60</left><top>28</top><width>400</width><height>18</height>
                         <font>Reg16</font><textcolor>selected</textcolor>
                         <label>$INFO[ListItem.Property(reply_time)]$INFO[ListItem.Property(reply_location), | ,]</label>
                     </control>
                     <control type="label">
                         <visible>!String.IsEqual(ListItem.Property(is_trigger),1)</visible>
-                        <right>10</right><top>22</top><width>auto</width><height>14</height>
+                        <right>10</right><top>28</top><width>auto</width><height>18</height>
                         <font>Reg16</font><textcolor>selected</textcolor><align>right</align>
                         <label>$INFO[ListItem.Property(reply_liked),&#x2764; ,]</label>
                     </control>
                     <control type="textbox">
                         <visible>!String.IsEqual(ListItem.Property(is_trigger),1)</visible>
-                        <left>40</left><top>36</top><right>10</right><bottom>4</bottom>
+                        <left>60</left><top>48</top><right>10</right><bottom>6</bottom>
                         <font>Reg16</font><textcolor>white</textcolor>
                         <label>$INFO[ListItem.Property(reply_content)]</label>
                         <autoscroll delay="6000" time="3000" repeat="10000">!Control.HasFocus(7001)</autoscroll>
                     </control>
                     <control type="label">
                         <visible>String.IsEqual(ListItem.Property(is_trigger),1)</visible>
-                        <left>0</left><top>0</top><width>1760</width><height>60</height>
+                        <left>0</left><top>0</top><width>1760</width><height>100</height>
                         <font>Reg18</font><textcolor>selected</textcolor>
                         <align>center</align><aligny>center</aligny>
                         <label>加载更多</label>
