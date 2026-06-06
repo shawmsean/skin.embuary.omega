@@ -37,66 +37,15 @@
 			<thumb />
 			<property name="labelID">var-moviehubheadline</property>
 			<property name="defaultID">embuary_all_movies</property>
-			<property name="hasVARLabel.type">allmovies</property>
-			<property name="hasVARLabel">$VAR[MovieHubHeadline]</property>
-			<property name="isDefault">true</property>
-			<property name="list">videodb://movies/titles/</property>
-			<property name="useFakeArt">true</property>
-			<property name="aspectRatio">keep</property>
-			<visible>[Library.HasContent(movies)
-		| [System.HasAddon(plugin.video.embycon) + [
-		String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.0.type),movies)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.1.type),movies)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.2.type),movies)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.3.type),movies)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.4.type),movies)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.5.type),movies)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.6.type),movies)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.7.type),movies)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.8.type),movies)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.9.type),movies)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.10.type),movies)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.11.type),movies)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.12.type),movies)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.13.type),movies)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.14.type),movies)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.15.type),movies)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.16.type),movies)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.17.type),movies)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.18.type),movies)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.19.type),movies)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.20.type),movies)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.21.type),movies)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.22.type),movies)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.23.type),movies)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.24.type),movies)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.25.type),movies)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.26.type),movies)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.27.type),movies)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.28.type),movies)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.29.type),movies)
-		]]]</visible>
-			<onclick condition="true">Dialog.Close(all,true)</onclick>
-			<onclick>ActivateWindow(1120,return)</onclick>
-			<property name="path">ActivateWindow(1120,return)</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="submenuVisibility">var-moviehubheadline</property>
-			<property name="group">mainmenu</property>
-			<property name="art1">$INFO[Container(4343$NUMBER[2]).ListItem(0).Art(poster)]</property>
-			<property name="art2">$INFO[Container(4343$NUMBER[2]).ListItem(1).Art(poster)]</property>
-			<property name="art3">$INFO[Container(4343$NUMBER[2]).ListItem(2).Art(poster)]</property>
-			<property name="art4">$INFO[Container(4343$NUMBER[2]).ListItem(3).Art(poster)]</property>
-			<property name="icon1">$INFO[Container(4343$NUMBER[2]).ListItem(0).Icon]</property>
-			<property name="icon2">$INFO[Container(4343$NUMBER[2]).ListItem(1).Icon]</property>
-			<property name="icon3">$INFO[Container(4343$NUMBER[2]).ListItem(2).Icon]</property>
-			<property name="icon4">$INFO[Container(4343$NUMBER[2]).ListItem(3).Icon]</property>
+			<visible>False</visible>
+			<onclick>noop</onclick>
 			<property name="hasSubmenu">False</property>
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
 			<label>$LOCALIZE[31169]</label>
 			<label2 />
-			<icon>DefaultVideo.png</icon>
+			<icon>special://skin/extras/icons/thumb_Collection.jpg</icon>
 			<thumb />
 			<property name="labelID">31169</property>
 			<property name="defaultID">embuary_collections</property>
@@ -129,59 +78,8 @@
 			<thumb />
 			<property name="labelID">var-tvshowhubheadline</property>
 			<property name="defaultID">embuary_all_shows</property>
-			<property name="hasVARLabel.type">allshows</property>
-			<property name="hasVARLabel">$VAR[TVShowHubHeadline]</property>
-			<property name="isDefault">true</property>
-			<property name="list">videodb://tvshows/titles/</property>
-			<property name="useFakeArt">true</property>
-			<property name="aspectRatio">keep</property>
-			<visible>[Library.HasContent(tvshows)
-		| [System.HasAddon(plugin.video.embycon) + [
-		String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.0.type),tvshows)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.1.type),tvshows)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.2.type),tvshows)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.3.type),tvshows)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.4.type),tvshows)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.5.type),tvshows)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.6.type),tvshows)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.7.type),tvshows)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.8.type),tvshows)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.9.type),tvshows)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.10.type),tvshows)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.11.type),tvshows)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.12.type),tvshows)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.13.type),tvshows)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.14.type),tvshows)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.15.type),tvshows)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.16.type),tvshows)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.17.type),tvshows)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.18.type),tvshows)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.19.type),tvshows)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.20.type),tvshows)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.21.type),tvshows)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.22.type),tvshows)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.23.type),tvshows)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.24.type),tvshows)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.25.type),tvshows)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.26.type),tvshows)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.27.type),tvshows)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.28.type),tvshows)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.29.type),tvshows)
-		]]]</visible>
-			<onclick condition="true">Dialog.Close(all,true)</onclick>
-			<onclick>ActivateWindow(1121,return)</onclick>
-			<property name="path">ActivateWindow(1121,return)</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="submenuVisibility">var-tvshowhubheadline</property>
-			<property name="group">mainmenu</property>
-			<property name="art1">$INFO[Container(4343$NUMBER[4]).ListItem(0).Art(poster)]</property>
-			<property name="art2">$INFO[Container(4343$NUMBER[4]).ListItem(1).Art(poster)]</property>
-			<property name="art3">$INFO[Container(4343$NUMBER[4]).ListItem(2).Art(poster)]</property>
-			<property name="art4">$INFO[Container(4343$NUMBER[4]).ListItem(3).Art(poster)]</property>
-			<property name="icon1">$INFO[Container(4343$NUMBER[4]).ListItem(0).Icon]</property>
-			<property name="icon2">$INFO[Container(4343$NUMBER[4]).ListItem(1).Icon]</property>
-			<property name="icon3">$INFO[Container(4343$NUMBER[4]).ListItem(2).Icon]</property>
-			<property name="icon4">$INFO[Container(4343$NUMBER[4]).ListItem(3).Icon]</property>
+			<visible>False</visible>
+			<onclick>noop</onclick>
 			<property name="hasSubmenu">False</property>
 		</item>
 		<item id="5">
@@ -2112,25 +2010,8 @@
 			<thumb />
 			<property name="labelID">19017</property>
 			<property name="defaultID">embuary_recordings</property>
-			<property name="isDefault">true</property>
-			<property name="list">pvr://recordings/tv/active/</property>
-			<property name="useFakeArt">false</property>
-			<property name="aspectRatio">keep</property>
-			<visible>[System.HasPVRAddon] + [Pvr.HasTVChannels]</visible>
-			<onclick condition="true">Dialog.Close(all,true)</onclick>
-			<onclick>ActivateWindow(tvrecordings)</onclick>
-			<property name="path">ActivateWindow(tvrecordings)</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="submenuVisibility">num-19017</property>
-			<property name="group">mainmenu</property>
-			<property name="art1">$INFO[Container(4343$NUMBER[66]).ListItem(0).Art(poster)]</property>
-			<property name="art2">$INFO[Container(4343$NUMBER[66]).ListItem(1).Art(poster)]</property>
-			<property name="art3">$INFO[Container(4343$NUMBER[66]).ListItem(2).Art(poster)]</property>
-			<property name="art4">$INFO[Container(4343$NUMBER[66]).ListItem(3).Art(poster)]</property>
-			<property name="icon1">$INFO[Container(4343$NUMBER[66]).ListItem(0).Icon]</property>
-			<property name="icon2">$INFO[Container(4343$NUMBER[66]).ListItem(1).Icon]</property>
-			<property name="icon3">$INFO[Container(4343$NUMBER[66]).ListItem(2).Icon]</property>
-			<property name="icon4">$INFO[Container(4343$NUMBER[66]).ListItem(3).Icon]</property>
+			<visible>False</visible>
+			<onclick>noop</onclick>
 			<property name="hasSubmenu">False</property>
 		</item>
 		<item id="67">
@@ -2145,39 +2026,7 @@
 			<property name="list">musicdb://albums/</property>
 			<property name="useFakeArt">true</property>
 			<property name="aspectRatio">keep</property>
-			<visible>[Library.HasContent(music)
-		| [System.HasAddon(plugin.video.embycon) + [
-		String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.0.type),music)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.1.type),music)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.2.type),music)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.3.type),music)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.4.type),music)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.5.type),music)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.6.type),music)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.7.type),music)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.8.type),music)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.9.type),music)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.10.type),music)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.11.type),music)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.12.type),music)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.13.type),music)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.14.type),music)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.15.type),music)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.16.type),music)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.17.type),music)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.18.type),music)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.19.type),music)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.20.type),music)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.21.type),music)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.22.type),music)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.23.type),music)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.24.type),music)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.25.type),music)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.26.type),music)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.27.type),music)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.28.type),music)
-		| String.IsEqual(Window(home).Property(plugin.video.embycon-view_item.29.type),music)
-		]]]</visible>
+			<visible>true</visible>
 			<onclick condition="true">Dialog.Close(all,true)</onclick>
 			<onclick>ActivateWindow(1122,return)</onclick>
 			<property name="path">ActivateWindow(1122,return)</property>
@@ -2262,24 +2111,8 @@
 			<thumb />
 			<property name="labelID">10821</property>
 			<property name="defaultID">embuary_games</property>
-			<property name="isDefault">true</property>
-			<property name="useFakeArt">false</property>
-			<property name="aspectRatio">keep</property>
-			<onclick condition="true">Dialog.Close(all,true)</onclick>
-			<onclick>ActivateWindow(games)</onclick>
-			<property name="path">ActivateWindow(games)</property>
-			<property name="list">games</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="submenuVisibility">num-10821</property>
-			<property name="group">mainmenu</property>
-			<property name="art1">$INFO[Container(4343$NUMBER[70]).ListItem(0).Art(poster)]</property>
-			<property name="art2">$INFO[Container(4343$NUMBER[70]).ListItem(1).Art(poster)]</property>
-			<property name="art3">$INFO[Container(4343$NUMBER[70]).ListItem(2).Art(poster)]</property>
-			<property name="art4">$INFO[Container(4343$NUMBER[70]).ListItem(3).Art(poster)]</property>
-			<property name="icon1">$INFO[Container(4343$NUMBER[70]).ListItem(0).Icon]</property>
-			<property name="icon2">$INFO[Container(4343$NUMBER[70]).ListItem(1).Icon]</property>
-			<property name="icon3">$INFO[Container(4343$NUMBER[70]).ListItem(2).Icon]</property>
-			<property name="icon4">$INFO[Container(4343$NUMBER[70]).ListItem(3).Icon]</property>
+			<visible>False</visible>
+			<onclick>noop</onclick>
 			<property name="hasSubmenu">False</property>
 		</item>
 		<item id="71">
@@ -2312,6 +2145,118 @@
 		</item>
 		<item id="72">
 			<property name="id">$NUMBER[72]</property>
+			<label>MUSIC</label>
+			<label2>自定义项</label2>
+			<icon>DefaultAddonMusic.png</icon>
+			<thumb>D:\Pictures\徽标\mingcute--netease-music-fill.png</thumb>
+			<property name="labelID">plugin.audio.music163</property>
+			<property name="defaultID">1038</property>
+			<property name="translatedPath">addons://sources/audio</property>
+			<property name="useFakeArt">true</property>
+			<property name="aspectRatio">keep</property>
+			<onclick condition="true">Dialog.Close(all,true)</onclick>
+			<onclick>ActivateWindow(Music,"plugin://plugin.audio.music163",return)</onclick>
+			<property name="path">ActivateWindow(Music,"plugin://plugin.audio.music163",return)</property>
+			<property name="list">plugin://plugin.audio.music163</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="submenuVisibility">plugin-audio-music163</property>
+			<property name="group">mainmenu</property>
+			<property name="art1">$INFO[Container(4343$NUMBER[72]).ListItem(0).Art(poster)]</property>
+			<property name="art2">$INFO[Container(4343$NUMBER[72]).ListItem(1).Art(poster)]</property>
+			<property name="art3">$INFO[Container(4343$NUMBER[72]).ListItem(2).Art(poster)]</property>
+			<property name="art4">$INFO[Container(4343$NUMBER[72]).ListItem(3).Art(poster)]</property>
+			<property name="icon1">$INFO[Container(4343$NUMBER[72]).ListItem(0).Icon]</property>
+			<property name="icon2">$INFO[Container(4343$NUMBER[72]).ListItem(1).Icon]</property>
+			<property name="icon3">$INFO[Container(4343$NUMBER[72]).ListItem(2).Icon]</property>
+			<property name="icon4">$INFO[Container(4343$NUMBER[72]).ListItem(3).Icon]</property>
+			<property name="hasSubmenu">False</property>
+		</item>
+		<item id="73">
+			<property name="id">$NUMBER[73]</property>
+			<label>bilibili</label>
+			<label2>视频插件</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>D:\Pictures\徽标\streamline-ultimate--bilibili-logo.png</thumb>
+			<property name="labelID">plugin.video.bili</property>
+			<property name="defaultID">plugin.video.bili</property>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.bili",return)</property>
+			<property name="useFakeArt">true</property>
+			<property name="aspectRatio">keep</property>
+			<onclick condition="true">Dialog.Close(all,true)</onclick>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.bili",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.bili",return)</property>
+			<property name="list">plugin://plugin.video.bili</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="submenuVisibility">plugin-video-bili</property>
+			<property name="group">mainmenu</property>
+			<property name="art1">$INFO[Container(4343$NUMBER[73]).ListItem(0).Art(poster)]</property>
+			<property name="art2">$INFO[Container(4343$NUMBER[73]).ListItem(1).Art(poster)]</property>
+			<property name="art3">$INFO[Container(4343$NUMBER[73]).ListItem(2).Art(poster)]</property>
+			<property name="art4">$INFO[Container(4343$NUMBER[73]).ListItem(3).Art(poster)]</property>
+			<property name="icon1">$INFO[Container(4343$NUMBER[73]).ListItem(0).Icon]</property>
+			<property name="icon2">$INFO[Container(4343$NUMBER[73]).ListItem(1).Icon]</property>
+			<property name="icon3">$INFO[Container(4343$NUMBER[73]).ListItem(2).Icon]</property>
+			<property name="icon4">$INFO[Container(4343$NUMBER[73]).ListItem(3).Icon]</property>
+			<property name="hasSubmenu">False</property>
+		</item>
+		<item id="74">
+			<property name="id">$NUMBER[74]</property>
+			<label>YouTube</label>
+			<label2>视频插件</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>D:\Pictures\徽标\logos--youtube-icon.png</thumb>
+			<property name="labelID">plugin.video.youtube</property>
+			<property name="defaultID">plugin.video.youtube</property>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.youtube",return)</property>
+			<property name="useFakeArt">true</property>
+			<property name="aspectRatio">keep</property>
+			<onclick condition="true">Dialog.Close(all,true)</onclick>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.youtube",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.youtube",return)</property>
+			<property name="list">plugin://plugin.video.youtube</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="submenuVisibility">plugin-video-youtube</property>
+			<property name="group">mainmenu</property>
+			<property name="art1">$INFO[Container(4343$NUMBER[74]).ListItem(0).Art(poster)]</property>
+			<property name="art2">$INFO[Container(4343$NUMBER[74]).ListItem(1).Art(poster)]</property>
+			<property name="art3">$INFO[Container(4343$NUMBER[74]).ListItem(2).Art(poster)]</property>
+			<property name="art4">$INFO[Container(4343$NUMBER[74]).ListItem(3).Art(poster)]</property>
+			<property name="icon1">$INFO[Container(4343$NUMBER[74]).ListItem(0).Icon]</property>
+			<property name="icon2">$INFO[Container(4343$NUMBER[74]).ListItem(1).Icon]</property>
+			<property name="icon3">$INFO[Container(4343$NUMBER[74]).ListItem(2).Icon]</property>
+			<property name="icon4">$INFO[Container(4343$NUMBER[74]).ListItem(3).Icon]</property>
+			<property name="hasSubmenu">False</property>
+		</item>
+		<item id="75">
+			<property name="id">$NUMBER[75]</property>
+			<label>music</label>
+			<label2>音乐插件</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>thumb</thumb>
+			<property name="labelID">plugin.audio.music</property>
+			<property name="defaultID">plugin.audio.music</property>
+			<property name="translatedPath">ActivateWindow(Music,"plugin://plugin.audio.music",return)</property>
+			<property name="useFakeArt">true</property>
+			<property name="aspectRatio">keep</property>
+			<onclick condition="true">Dialog.Close(all,true)</onclick>
+			<onclick>ActivateWindow(Music,"plugin://plugin.audio.music",return)</onclick>
+			<property name="path">ActivateWindow(Music,"plugin://plugin.audio.music",return)</property>
+			<property name="list">plugin://plugin.audio.music</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="submenuVisibility">plugin-audio-music</property>
+			<property name="group">mainmenu</property>
+			<property name="art1">$INFO[Container(4343$NUMBER[75]).ListItem(0).Art(poster)]</property>
+			<property name="art2">$INFO[Container(4343$NUMBER[75]).ListItem(1).Art(poster)]</property>
+			<property name="art3">$INFO[Container(4343$NUMBER[75]).ListItem(2).Art(poster)]</property>
+			<property name="art4">$INFO[Container(4343$NUMBER[75]).ListItem(3).Art(poster)]</property>
+			<property name="icon1">$INFO[Container(4343$NUMBER[75]).ListItem(0).Icon]</property>
+			<property name="icon2">$INFO[Container(4343$NUMBER[75]).ListItem(1).Icon]</property>
+			<property name="icon3">$INFO[Container(4343$NUMBER[75]).ListItem(2).Icon]</property>
+			<property name="icon4">$INFO[Container(4343$NUMBER[75]).ListItem(3).Icon]</property>
+			<property name="hasSubmenu">False</property>
+		</item>
+		<item id="76">
+			<property name="id">$NUMBER[76]</property>
 			<label>$LOCALIZE[20244]</label>
 			<label2 />
 			<icon>special://skin/extras/icons/thumb_android.jpg</icon>
@@ -2329,14 +2274,14 @@
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="submenuVisibility">num-20244</property>
 			<property name="group">mainmenu</property>
-			<property name="art1">$INFO[Container(4343$NUMBER[72]).ListItem(0).Art(poster)]</property>
-			<property name="art2">$INFO[Container(4343$NUMBER[72]).ListItem(1).Art(poster)]</property>
-			<property name="art3">$INFO[Container(4343$NUMBER[72]).ListItem(2).Art(poster)]</property>
-			<property name="art4">$INFO[Container(4343$NUMBER[72]).ListItem(3).Art(poster)]</property>
-			<property name="icon1">$INFO[Container(4343$NUMBER[72]).ListItem(0).Icon]</property>
-			<property name="icon2">$INFO[Container(4343$NUMBER[72]).ListItem(1).Icon]</property>
-			<property name="icon3">$INFO[Container(4343$NUMBER[72]).ListItem(2).Icon]</property>
-			<property name="icon4">$INFO[Container(4343$NUMBER[72]).ListItem(3).Icon]</property>
+			<property name="art1">$INFO[Container(4343$NUMBER[76]).ListItem(0).Art(poster)]</property>
+			<property name="art2">$INFO[Container(4343$NUMBER[76]).ListItem(1).Art(poster)]</property>
+			<property name="art3">$INFO[Container(4343$NUMBER[76]).ListItem(2).Art(poster)]</property>
+			<property name="art4">$INFO[Container(4343$NUMBER[76]).ListItem(3).Art(poster)]</property>
+			<property name="icon1">$INFO[Container(4343$NUMBER[76]).ListItem(0).Icon]</property>
+			<property name="icon2">$INFO[Container(4343$NUMBER[76]).ListItem(1).Icon]</property>
+			<property name="icon3">$INFO[Container(4343$NUMBER[76]).ListItem(2).Icon]</property>
+			<property name="icon4">$INFO[Container(4343$NUMBER[76]).ListItem(3).Icon]</property>
 			<property name="hasSubmenu">False</property>
 		</item>
 	</include>
@@ -2344,7 +2289,7 @@
 	<include name="skinshortcuts-submenu">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">73</property>
+			<property name="mainmenuid">77</property>
 			<label>$LOCALIZE[31180]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -2362,7 +2307,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">73</property>
+			<property name="mainmenuid">77</property>
 			<label>$LOCALIZE[31169]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -2380,7 +2325,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">73</property>
+			<property name="mainmenuid">77</property>
 			<label>$LOCALIZE[31209]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -2398,7 +2343,7 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">73</property>
+			<property name="mainmenuid">77</property>
 			<label>$LOCALIZE[135]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -2417,7 +2362,7 @@
 		</item>
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">73</property>
+			<property name="mainmenuid">77</property>
 			<label>$LOCALIZE[31017]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -2443,7 +2388,7 @@
 		</item>
 		<item id="6">
 			<property name="id">$NUMBER[6]</property>
-			<property name="mainmenuid">73</property>
+			<property name="mainmenuid">77</property>
 			<label>$LOCALIZE[31160]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -2462,7 +2407,7 @@
 		</item>
 		<item id="7">
 			<property name="id">$NUMBER[7]</property>
-			<property name="mainmenuid">73</property>
+			<property name="mainmenuid">77</property>
 			<label>$LOCALIZE[14022]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -2480,7 +2425,7 @@
 		</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">74</property>
+			<property name="mainmenuid">78</property>
 			<label>$LOCALIZE[31179]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -2498,7 +2443,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">74</property>
+			<property name="mainmenuid">78</property>
 			<label>$LOCALIZE[31210]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -2516,7 +2461,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">74</property>
+			<property name="mainmenuid">78</property>
 			<label>$LOCALIZE[135]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -2535,7 +2480,7 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">74</property>
+			<property name="mainmenuid">78</property>
 			<label>$LOCALIZE[31017]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -2561,7 +2506,7 @@
 		</item>
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">74</property>
+			<property name="mainmenuid">78</property>
 			<label>$LOCALIZE[31154]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -2579,7 +2524,7 @@
 		</item>
 		<item id="6">
 			<property name="id">$NUMBER[6]</property>
-			<property name="mainmenuid">74</property>
+			<property name="mainmenuid">78</property>
 			<label>$LOCALIZE[31239]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -2597,7 +2542,7 @@
 		</item>
 		<item id="7">
 			<property name="id">$NUMBER[7]</property>
-			<property name="mainmenuid">74</property>
+			<property name="mainmenuid">78</property>
 			<label>$LOCALIZE[14022]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -2615,7 +2560,7 @@
 		</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">75</property>
+			<property name="mainmenuid">79</property>
 			<label>$LOCALIZE[133]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -2633,7 +2578,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">75</property>
+			<property name="mainmenuid">79</property>
 			<label>$LOCALIZE[132]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -2651,7 +2596,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">75</property>
+			<property name="mainmenuid">79</property>
 			<label>$LOCALIZE[134]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -2669,7 +2614,7 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">75</property>
+			<property name="mainmenuid">79</property>
 			<label>$LOCALIZE[136]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -2687,7 +2632,7 @@
 		</item>
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">75</property>
+			<property name="mainmenuid">79</property>
 			<label>$LOCALIZE[14022]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -2704,7 +2649,7 @@
 		</item>
 		<item id="6">
 			<property name="id">$NUMBER[6]</property>
-			<property name="mainmenuid">75</property>
+			<property name="mainmenuid">79</property>
 			<label>$LOCALIZE[20389]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -2722,7 +2667,7 @@
 		</item>
 		<item id="7">
 			<property name="id">$NUMBER[7]</property>
-			<property name="mainmenuid">75</property>
+			<property name="mainmenuid">79</property>
 			<label>$VAR[PartyModeButton]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -2741,7 +2686,7 @@
 		</item>
 		<item id="8">
 			<property name="id">$NUMBER[8]</property>
-			<property name="mainmenuid">75</property>
+			<property name="mainmenuid">79</property>
 			<label>$LOCALIZE[31240]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -2759,7 +2704,7 @@
 		</item>
 		<item id="9">
 			<property name="id">$NUMBER[9]</property>
-			<property name="mainmenuid">75</property>
+			<property name="mainmenuid">79</property>
 			<label>$LOCALIZE[31241]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -2777,7 +2722,92 @@
 		</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">77</property>
+			<property name="mainmenuid">80</property>
+			<label>每日推荐</label>
+			<label2>音乐插件</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>thumb</thumb>
+			<property name="labelID">plugin.audio.music/recommend_songs/</property>
+			<property name="defaultID">plugin.audio.music/recommend_songs/</property>
+			<property name="translatedPath">ActivateWindow(Music,"plugin://plugin.audio.music/recommend_songs/",return)</property>
+			<onclick>ActivateWindow(Music,"plugin://plugin.audio.music/recommend_songs/",return)</onclick>
+			<property name="path">ActivateWindow(Music,"plugin://plugin.audio.music/recommend_songs/",return)</property>
+			<property name="list">plugin://plugin.audio.music/recommend_songs/</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(100).ListItem.Property(submenuVisibility),customhub)</visible>
+			<property name="group">customhub</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="2">
+			<property name="id">$NUMBER[2]</property>
+			<property name="mainmenuid">80</property>
+			<label>热门歌单</label>
+			<label2>音乐插件</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>thumb</thumb>
+			<property name="labelID">plugin.audio.music/hot_playlists/0/</property>
+			<property name="defaultID">plugin.audio.music/hot_playlists/0/</property>
+			<property name="translatedPath">ActivateWindow(Music,"plugin://plugin.audio.music/hot_playlists/0/",return)</property>
+			<onclick>ActivateWindow(Music,"plugin://plugin.audio.music/hot_playlists/0/",return)</onclick>
+			<property name="path">ActivateWindow(Music,"plugin://plugin.audio.music/hot_playlists/0/",return)</property>
+			<property name="list">plugin://plugin.audio.music/hot_playlists/0/</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(100).ListItem.Property(submenuVisibility),customhub)</visible>
+			<property name="group">customhub</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="3">
+			<property name="id">$NUMBER[3]</property>
+			<property name="mainmenuid">80</property>
+			<label>热门歌手</label>
+			<label2>音乐插件</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>thumb</thumb>
+			<property name="labelID">plugin.audio.music/top_artists/</property>
+			<property name="defaultID">plugin.audio.music/top_artists/</property>
+			<property name="translatedPath">ActivateWindow(Music,"plugin://plugin.audio.music/top_artists/",return)</property>
+			<onclick>ActivateWindow(Music,"plugin://plugin.audio.music/top_artists/",return)</onclick>
+			<property name="path">ActivateWindow(Music,"plugin://plugin.audio.music/top_artists/",return)</property>
+			<property name="list">plugin://plugin.audio.music/top_artists/</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(100).ListItem.Property(submenuVisibility),customhub)</visible>
+			<property name="group">customhub</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="4">
+			<property name="id">$NUMBER[4]</property>
+			<property name="mainmenuid">80</property>
+			<label>QQ音乐排行榜</label>
+			<label2>音乐插件</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>thumb</thumb>
+			<property name="labelID">plugin.audio.music/tunehub_toplists_platform/qq/</property>
+			<property name="defaultID">plugin.audio.music/tunehub_toplists_platform/qq/</property>
+			<property name="translatedPath">ActivateWindow(Music,"plugin://plugin.audio.music/tunehub_toplists_platform/qq/",return)</property>
+			<onclick>ActivateWindow(Music,"plugin://plugin.audio.music/tunehub_toplists_platform/qq/",return)</onclick>
+			<property name="path">ActivateWindow(Music,"plugin://plugin.audio.music/tunehub_toplists_platform/qq/",return)</property>
+			<property name="list">plugin://plugin.audio.music/tunehub_toplists_platform/qq/</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(100).ListItem.Property(submenuVisibility),customhub)</visible>
+			<property name="group">customhub</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="5">
+			<property name="id">$NUMBER[5]</property>
+			<property name="mainmenuid">80</property>
+			<label>music</label>
+			<label2>音乐插件</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>thumb</thumb>
+			<property name="labelID">plugin.audio.music</property>
+			<property name="defaultID">plugin.audio.music</property>
+			<property name="translatedPath">ActivateWindow(Music,"plugin://plugin.audio.music",return)</property>
+			<onclick>ActivateWindow(Music,"plugin://plugin.audio.music",return)</onclick>
+			<property name="path">ActivateWindow(Music,"plugin://plugin.audio.music",return)</property>
+			<property name="list">plugin://plugin.audio.music</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(100).ListItem.Property(submenuVisibility),customhub)</visible>
+			<property name="group">customhub</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="1">
+			<property name="id">$NUMBER[1]</property>
+			<property name="mainmenuid">81</property>
 			<label>$VAR[MovieHubHeadline]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -2828,7 +2858,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">77</property>
+			<property name="mainmenuid">81</property>
 			<label>$LOCALIZE[31169]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -2847,7 +2877,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">77</property>
+			<property name="mainmenuid">81</property>
 			<label>$VAR[TVShowHubHeadline]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -2898,7 +2928,7 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">77</property>
+			<property name="mainmenuid">81</property>
 			<label>$LOCALIZE[3]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -2916,7 +2946,7 @@
 		</item>
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">77</property>
+			<property name="mainmenuid">81</property>
 			<label>$VAR[PVRLabel]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -2935,7 +2965,7 @@
 		</item>
 		<item id="6">
 			<property name="id">$NUMBER[6]</property>
-			<property name="mainmenuid">77</property>
+			<property name="mainmenuid">81</property>
 			<label>$LOCALIZE[19017]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -2954,7 +2984,7 @@
 		</item>
 		<item id="7">
 			<property name="id">$NUMBER[7]</property>
-			<property name="mainmenuid">77</property>
+			<property name="mainmenuid">81</property>
 			<label>$LOCALIZE[2]</label>
 			<label2 />
 			<icon>$VAR[MainMenuMusicHubIcon]</icon>
@@ -3005,7 +3035,7 @@
 		</item>
 		<item id="8">
 			<property name="id">$NUMBER[8]</property>
-			<property name="mainmenuid">77</property>
+			<property name="mainmenuid">81</property>
 			<label>$LOCALIZE[20389]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -3024,7 +3054,7 @@
 		</item>
 		<item id="9">
 			<property name="id">$NUMBER[9]</property>
-			<property name="mainmenuid">77</property>
+			<property name="mainmenuid">81</property>
 			<label>$VAR[CustomHubHeadline]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -3043,7 +3073,25 @@
 		</item>
 		<item id="10">
 			<property name="id">$NUMBER[10]</property>
-			<property name="mainmenuid">77</property>
+			<property name="mainmenuid">81</property>
+			<label>$LOCALIZE[1036]</label>
+			<label2 />
+			<icon>defaultfavourites.png</icon>
+			<thumb />
+			<property name="labelID">1036</property>
+			<property name="defaultID">1036</property>
+			<property name="translatedPath">favourites://</property>
+			<onclick condition="true">Dialog.Close(all,true)</onclick>
+			<onclick>ActivateWindow(favourites)</onclick>
+			<property name="path">ActivateWindow(favourites)</property>
+			<property name="list">favourites</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(100).ListItem.Property(submenuVisibility),sidepanel)</visible>
+			<property name="group">sidepanel</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="11">
+			<property name="id">$NUMBER[11]</property>
+			<property name="mainmenuid">81</property>
 			<label>$LOCALIZE[24001]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -3059,9 +3107,9 @@
 			<property name="group">sidepanel</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="11">
-			<property name="id">$NUMBER[11]</property>
-			<property name="mainmenuid">77</property>
+		<item id="12">
+			<property name="id">$NUMBER[12]</property>
+			<property name="mainmenuid">81</property>
 			<label>$LOCALIZE[20244]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -3078,9 +3126,9 @@
 			<property name="group">sidepanel</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="12">
-			<property name="id">$NUMBER[12]</property>
-			<property name="mainmenuid">77</property>
+		<item id="13">
+			<property name="id">$NUMBER[13]</property>
+			<property name="mainmenuid">81</property>
 			<label>$LOCALIZE[8]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -3097,9 +3145,27 @@
 			<property name="group">sidepanel</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="13">
-			<property name="id">$NUMBER[13]</property>
-			<property name="mainmenuid">77</property>
+		<item id="14">
+			<property name="id">$NUMBER[14]</property>
+			<property name="mainmenuid">81</property>
+			<label>music</label>
+			<label2>音乐插件</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>thumb</thumb>
+			<property name="labelID">plugin.audio.music</property>
+			<property name="defaultID">plugin.audio.music</property>
+			<property name="translatedPath">ActivateWindow(Music,"plugin://plugin.audio.music",return)</property>
+			<onclick condition="true">Dialog.Close(all,true)</onclick>
+			<onclick>ActivateWindow(Music,"plugin://plugin.audio.music",return)</onclick>
+			<property name="path">ActivateWindow(Music,"plugin://plugin.audio.music",return)</property>
+			<property name="list">plugin://plugin.audio.music</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(100).ListItem.Property(submenuVisibility),sidepanel)</visible>
+			<property name="group">sidepanel</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="15">
+			<property name="id">$NUMBER[15]</property>
+			<property name="mainmenuid">81</property>
 			<label>$LOCALIZE[799]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -3549,6 +3615,30 @@
 	<include name="skinshortcuts-group-alt-num-24001">
 		<description>No items</description>
 	</include>
+	<include name="skinshortcuts-group-plugin-audio-music163">
+		<description>No items</description>
+	</include>
+	<include name="skinshortcuts-group-alt-plugin-audio-music163">
+		<description>No items</description>
+	</include>
+	<include name="skinshortcuts-group-plugin-video-bili">
+		<description>No items</description>
+	</include>
+	<include name="skinshortcuts-group-alt-plugin-video-bili">
+		<description>No items</description>
+	</include>
+	<include name="skinshortcuts-group-plugin-video-youtube">
+		<description>No items</description>
+	</include>
+	<include name="skinshortcuts-group-alt-plugin-video-youtube">
+		<description>No items</description>
+	</include>
+	<include name="skinshortcuts-group-plugin-audio-music">
+		<description>No items</description>
+	</include>
+	<include name="skinshortcuts-group-alt-plugin-audio-music">
+		<description>No items</description>
+	</include>
 	<include name="skinshortcuts-group-num-20244">
 		<description>No items</description>
 	</include>
@@ -3558,7 +3648,7 @@
 	<include name="skinshortcuts-group-moviehub">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">73</property>
+			<property name="mainmenuid">77</property>
 			<label>$LOCALIZE[31180]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -3576,7 +3666,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">73</property>
+			<property name="mainmenuid">77</property>
 			<label>$LOCALIZE[31169]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -3594,7 +3684,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">73</property>
+			<property name="mainmenuid">77</property>
 			<label>$LOCALIZE[31209]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -3612,7 +3702,7 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">73</property>
+			<property name="mainmenuid">77</property>
 			<label>$LOCALIZE[135]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -3631,7 +3721,7 @@
 		</item>
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">73</property>
+			<property name="mainmenuid">77</property>
 			<label>$LOCALIZE[31017]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -3657,7 +3747,7 @@
 		</item>
 		<item id="6">
 			<property name="id">$NUMBER[6]</property>
-			<property name="mainmenuid">73</property>
+			<property name="mainmenuid">77</property>
 			<label>$LOCALIZE[31160]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -3676,7 +3766,7 @@
 		</item>
 		<item id="7">
 			<property name="id">$NUMBER[7]</property>
-			<property name="mainmenuid">73</property>
+			<property name="mainmenuid">77</property>
 			<label>$LOCALIZE[14022]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -3696,7 +3786,7 @@
 	<include name="skinshortcuts-group-alt-moviehub">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">73</property>
+			<property name="mainmenuid">77</property>
 			<label>$LOCALIZE[31180]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -3714,7 +3804,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">73</property>
+			<property name="mainmenuid">77</property>
 			<label>$LOCALIZE[31169]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -3732,7 +3822,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">73</property>
+			<property name="mainmenuid">77</property>
 			<label>$LOCALIZE[31209]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -3750,7 +3840,7 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">73</property>
+			<property name="mainmenuid">77</property>
 			<label>$LOCALIZE[135]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -3769,7 +3859,7 @@
 		</item>
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">73</property>
+			<property name="mainmenuid">77</property>
 			<label>$LOCALIZE[31017]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -3795,7 +3885,7 @@
 		</item>
 		<item id="6">
 			<property name="id">$NUMBER[6]</property>
-			<property name="mainmenuid">73</property>
+			<property name="mainmenuid">77</property>
 			<label>$LOCALIZE[31160]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -3814,7 +3904,7 @@
 		</item>
 		<item id="7">
 			<property name="id">$NUMBER[7]</property>
-			<property name="mainmenuid">73</property>
+			<property name="mainmenuid">77</property>
 			<label>$LOCALIZE[14022]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -3834,7 +3924,7 @@
 	<include name="skinshortcuts-group-tvshowhub">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">74</property>
+			<property name="mainmenuid">78</property>
 			<label>$LOCALIZE[31179]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -3852,7 +3942,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">74</property>
+			<property name="mainmenuid">78</property>
 			<label>$LOCALIZE[31210]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -3870,7 +3960,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">74</property>
+			<property name="mainmenuid">78</property>
 			<label>$LOCALIZE[135]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -3889,7 +3979,7 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">74</property>
+			<property name="mainmenuid">78</property>
 			<label>$LOCALIZE[31017]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -3915,7 +4005,7 @@
 		</item>
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">74</property>
+			<property name="mainmenuid">78</property>
 			<label>$LOCALIZE[31154]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -3933,7 +4023,7 @@
 		</item>
 		<item id="6">
 			<property name="id">$NUMBER[6]</property>
-			<property name="mainmenuid">74</property>
+			<property name="mainmenuid">78</property>
 			<label>$LOCALIZE[31239]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -3951,7 +4041,7 @@
 		</item>
 		<item id="7">
 			<property name="id">$NUMBER[7]</property>
-			<property name="mainmenuid">74</property>
+			<property name="mainmenuid">78</property>
 			<label>$LOCALIZE[14022]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -3971,7 +4061,7 @@
 	<include name="skinshortcuts-group-alt-tvshowhub">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">74</property>
+			<property name="mainmenuid">78</property>
 			<label>$LOCALIZE[31179]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -3989,7 +4079,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">74</property>
+			<property name="mainmenuid">78</property>
 			<label>$LOCALIZE[31210]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -4007,7 +4097,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">74</property>
+			<property name="mainmenuid">78</property>
 			<label>$LOCALIZE[135]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -4026,7 +4116,7 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">74</property>
+			<property name="mainmenuid">78</property>
 			<label>$LOCALIZE[31017]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -4052,7 +4142,7 @@
 		</item>
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">74</property>
+			<property name="mainmenuid">78</property>
 			<label>$LOCALIZE[31154]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -4070,7 +4160,7 @@
 		</item>
 		<item id="6">
 			<property name="id">$NUMBER[6]</property>
-			<property name="mainmenuid">74</property>
+			<property name="mainmenuid">78</property>
 			<label>$LOCALIZE[31239]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -4088,7 +4178,7 @@
 		</item>
 		<item id="7">
 			<property name="id">$NUMBER[7]</property>
-			<property name="mainmenuid">74</property>
+			<property name="mainmenuid">78</property>
 			<label>$LOCALIZE[14022]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -4108,7 +4198,7 @@
 	<include name="skinshortcuts-group-musichub">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">75</property>
+			<property name="mainmenuid">79</property>
 			<label>$LOCALIZE[133]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -4126,7 +4216,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">75</property>
+			<property name="mainmenuid">79</property>
 			<label>$LOCALIZE[132]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -4144,7 +4234,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">75</property>
+			<property name="mainmenuid">79</property>
 			<label>$LOCALIZE[134]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -4162,7 +4252,7 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">75</property>
+			<property name="mainmenuid">79</property>
 			<label>$LOCALIZE[136]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -4180,7 +4270,7 @@
 		</item>
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">75</property>
+			<property name="mainmenuid">79</property>
 			<label>$LOCALIZE[14022]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -4197,7 +4287,7 @@
 		</item>
 		<item id="6">
 			<property name="id">$NUMBER[6]</property>
-			<property name="mainmenuid">75</property>
+			<property name="mainmenuid">79</property>
 			<label>$LOCALIZE[20389]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -4215,7 +4305,7 @@
 		</item>
 		<item id="7">
 			<property name="id">$NUMBER[7]</property>
-			<property name="mainmenuid">75</property>
+			<property name="mainmenuid">79</property>
 			<label>$VAR[PartyModeButton]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -4234,7 +4324,7 @@
 		</item>
 		<item id="8">
 			<property name="id">$NUMBER[8]</property>
-			<property name="mainmenuid">75</property>
+			<property name="mainmenuid">79</property>
 			<label>$LOCALIZE[31240]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -4252,7 +4342,7 @@
 		</item>
 		<item id="9">
 			<property name="id">$NUMBER[9]</property>
-			<property name="mainmenuid">75</property>
+			<property name="mainmenuid">79</property>
 			<label>$LOCALIZE[31241]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -4272,7 +4362,7 @@
 	<include name="skinshortcuts-group-alt-musichub">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">75</property>
+			<property name="mainmenuid">79</property>
 			<label>$LOCALIZE[133]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -4290,7 +4380,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">75</property>
+			<property name="mainmenuid">79</property>
 			<label>$LOCALIZE[132]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -4308,7 +4398,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">75</property>
+			<property name="mainmenuid">79</property>
 			<label>$LOCALIZE[134]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -4326,7 +4416,7 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">75</property>
+			<property name="mainmenuid">79</property>
 			<label>$LOCALIZE[136]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -4344,7 +4434,7 @@
 		</item>
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">75</property>
+			<property name="mainmenuid">79</property>
 			<label>$LOCALIZE[14022]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -4361,7 +4451,7 @@
 		</item>
 		<item id="6">
 			<property name="id">$NUMBER[6]</property>
-			<property name="mainmenuid">75</property>
+			<property name="mainmenuid">79</property>
 			<label>$LOCALIZE[20389]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -4379,7 +4469,7 @@
 		</item>
 		<item id="7">
 			<property name="id">$NUMBER[7]</property>
-			<property name="mainmenuid">75</property>
+			<property name="mainmenuid">79</property>
 			<label>$VAR[PartyModeButton]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -4398,7 +4488,7 @@
 		</item>
 		<item id="8">
 			<property name="id">$NUMBER[8]</property>
-			<property name="mainmenuid">75</property>
+			<property name="mainmenuid">79</property>
 			<label>$LOCALIZE[31240]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -4416,7 +4506,7 @@
 		</item>
 		<item id="9">
 			<property name="id">$NUMBER[9]</property>
-			<property name="mainmenuid">75</property>
+			<property name="mainmenuid">79</property>
 			<label>$LOCALIZE[31241]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -4434,15 +4524,183 @@
 		</item>
 	</include>
 	<include name="skinshortcuts-group-customhub">
-		<description>No items</description>
+		<item id="1">
+			<property name="id">$NUMBER[1]</property>
+			<property name="mainmenuid">80</property>
+			<label>每日推荐</label>
+			<label2>音乐插件</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>thumb</thumb>
+			<property name="labelID">plugin.audio.music/recommend_songs/</property>
+			<property name="defaultID">plugin.audio.music/recommend_songs/</property>
+			<property name="translatedPath">ActivateWindow(Music,"plugin://plugin.audio.music/recommend_songs/",return)</property>
+			<onclick>ActivateWindow(Music,"plugin://plugin.audio.music/recommend_songs/",return)</onclick>
+			<property name="path">ActivateWindow(Music,"plugin://plugin.audio.music/recommend_songs/",return)</property>
+			<property name="list">plugin://plugin.audio.music/recommend_songs/</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="group">customhub</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="2">
+			<property name="id">$NUMBER[2]</property>
+			<property name="mainmenuid">80</property>
+			<label>热门歌单</label>
+			<label2>音乐插件</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>thumb</thumb>
+			<property name="labelID">plugin.audio.music/hot_playlists/0/</property>
+			<property name="defaultID">plugin.audio.music/hot_playlists/0/</property>
+			<property name="translatedPath">ActivateWindow(Music,"plugin://plugin.audio.music/hot_playlists/0/",return)</property>
+			<onclick>ActivateWindow(Music,"plugin://plugin.audio.music/hot_playlists/0/",return)</onclick>
+			<property name="path">ActivateWindow(Music,"plugin://plugin.audio.music/hot_playlists/0/",return)</property>
+			<property name="list">plugin://plugin.audio.music/hot_playlists/0/</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="group">customhub</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="3">
+			<property name="id">$NUMBER[3]</property>
+			<property name="mainmenuid">80</property>
+			<label>热门歌手</label>
+			<label2>音乐插件</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>thumb</thumb>
+			<property name="labelID">plugin.audio.music/top_artists/</property>
+			<property name="defaultID">plugin.audio.music/top_artists/</property>
+			<property name="translatedPath">ActivateWindow(Music,"plugin://plugin.audio.music/top_artists/",return)</property>
+			<onclick>ActivateWindow(Music,"plugin://plugin.audio.music/top_artists/",return)</onclick>
+			<property name="path">ActivateWindow(Music,"plugin://plugin.audio.music/top_artists/",return)</property>
+			<property name="list">plugin://plugin.audio.music/top_artists/</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="group">customhub</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="4">
+			<property name="id">$NUMBER[4]</property>
+			<property name="mainmenuid">80</property>
+			<label>QQ音乐排行榜</label>
+			<label2>音乐插件</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>thumb</thumb>
+			<property name="labelID">plugin.audio.music/tunehub_toplists_platform/qq/</property>
+			<property name="defaultID">plugin.audio.music/tunehub_toplists_platform/qq/</property>
+			<property name="translatedPath">ActivateWindow(Music,"plugin://plugin.audio.music/tunehub_toplists_platform/qq/",return)</property>
+			<onclick>ActivateWindow(Music,"plugin://plugin.audio.music/tunehub_toplists_platform/qq/",return)</onclick>
+			<property name="path">ActivateWindow(Music,"plugin://plugin.audio.music/tunehub_toplists_platform/qq/",return)</property>
+			<property name="list">plugin://plugin.audio.music/tunehub_toplists_platform/qq/</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="group">customhub</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="5">
+			<property name="id">$NUMBER[5]</property>
+			<property name="mainmenuid">80</property>
+			<label>music</label>
+			<label2>音乐插件</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>thumb</thumb>
+			<property name="labelID">plugin.audio.music</property>
+			<property name="defaultID">plugin.audio.music</property>
+			<property name="translatedPath">ActivateWindow(Music,"plugin://plugin.audio.music",return)</property>
+			<onclick>ActivateWindow(Music,"plugin://plugin.audio.music",return)</onclick>
+			<property name="path">ActivateWindow(Music,"plugin://plugin.audio.music",return)</property>
+			<property name="list">plugin://plugin.audio.music</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="group">customhub</property>
+			<property name="isSubmenu">True</property>
+		</item>
 	</include>
 	<include name="skinshortcuts-group-alt-customhub">
-		<description>No items</description>
+		<item id="1">
+			<property name="id">$NUMBER[1]</property>
+			<property name="mainmenuid">80</property>
+			<label>每日推荐</label>
+			<label2>音乐插件</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>thumb</thumb>
+			<property name="labelID">plugin.audio.music/recommend_songs/</property>
+			<property name="defaultID">plugin.audio.music/recommend_songs/</property>
+			<property name="translatedPath">ActivateWindow(Music,"plugin://plugin.audio.music/recommend_songs/",return)</property>
+			<onclick>ActivateWindow(Music,"plugin://plugin.audio.music/recommend_songs/",return)</onclick>
+			<property name="path">ActivateWindow(Music,"plugin://plugin.audio.music/recommend_songs/",return)</property>
+			<property name="list">plugin://plugin.audio.music/recommend_songs/</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),customhub)</visible>
+			<property name="group">customhub</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="2">
+			<property name="id">$NUMBER[2]</property>
+			<property name="mainmenuid">80</property>
+			<label>热门歌单</label>
+			<label2>音乐插件</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>thumb</thumb>
+			<property name="labelID">plugin.audio.music/hot_playlists/0/</property>
+			<property name="defaultID">plugin.audio.music/hot_playlists/0/</property>
+			<property name="translatedPath">ActivateWindow(Music,"plugin://plugin.audio.music/hot_playlists/0/",return)</property>
+			<onclick>ActivateWindow(Music,"plugin://plugin.audio.music/hot_playlists/0/",return)</onclick>
+			<property name="path">ActivateWindow(Music,"plugin://plugin.audio.music/hot_playlists/0/",return)</property>
+			<property name="list">plugin://plugin.audio.music/hot_playlists/0/</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),customhub)</visible>
+			<property name="group">customhub</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="3">
+			<property name="id">$NUMBER[3]</property>
+			<property name="mainmenuid">80</property>
+			<label>热门歌手</label>
+			<label2>音乐插件</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>thumb</thumb>
+			<property name="labelID">plugin.audio.music/top_artists/</property>
+			<property name="defaultID">plugin.audio.music/top_artists/</property>
+			<property name="translatedPath">ActivateWindow(Music,"plugin://plugin.audio.music/top_artists/",return)</property>
+			<onclick>ActivateWindow(Music,"plugin://plugin.audio.music/top_artists/",return)</onclick>
+			<property name="path">ActivateWindow(Music,"plugin://plugin.audio.music/top_artists/",return)</property>
+			<property name="list">plugin://plugin.audio.music/top_artists/</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),customhub)</visible>
+			<property name="group">customhub</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="4">
+			<property name="id">$NUMBER[4]</property>
+			<property name="mainmenuid">80</property>
+			<label>QQ音乐排行榜</label>
+			<label2>音乐插件</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>thumb</thumb>
+			<property name="labelID">plugin.audio.music/tunehub_toplists_platform/qq/</property>
+			<property name="defaultID">plugin.audio.music/tunehub_toplists_platform/qq/</property>
+			<property name="translatedPath">ActivateWindow(Music,"plugin://plugin.audio.music/tunehub_toplists_platform/qq/",return)</property>
+			<onclick>ActivateWindow(Music,"plugin://plugin.audio.music/tunehub_toplists_platform/qq/",return)</onclick>
+			<property name="path">ActivateWindow(Music,"plugin://plugin.audio.music/tunehub_toplists_platform/qq/",return)</property>
+			<property name="list">plugin://plugin.audio.music/tunehub_toplists_platform/qq/</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),customhub)</visible>
+			<property name="group">customhub</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="5">
+			<property name="id">$NUMBER[5]</property>
+			<property name="mainmenuid">80</property>
+			<label>music</label>
+			<label2>音乐插件</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>thumb</thumb>
+			<property name="labelID">plugin.audio.music</property>
+			<property name="defaultID">plugin.audio.music</property>
+			<property name="translatedPath">ActivateWindow(Music,"plugin://plugin.audio.music",return)</property>
+			<onclick>ActivateWindow(Music,"plugin://plugin.audio.music",return)</onclick>
+			<property name="path">ActivateWindow(Music,"plugin://plugin.audio.music",return)</property>
+			<property name="list">plugin://plugin.audio.music</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),customhub)</visible>
+			<property name="group">customhub</property>
+			<property name="isSubmenu">True</property>
+		</item>
 	</include>
 	<include name="skinshortcuts-group-sidepanel">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">77</property>
+			<property name="mainmenuid">81</property>
 			<label>$VAR[MovieHubHeadline]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -4493,7 +4751,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">77</property>
+			<property name="mainmenuid">81</property>
 			<label>$LOCALIZE[31169]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -4512,7 +4770,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">77</property>
+			<property name="mainmenuid">81</property>
 			<label>$VAR[TVShowHubHeadline]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -4563,7 +4821,7 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">77</property>
+			<property name="mainmenuid">81</property>
 			<label>$LOCALIZE[3]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -4581,7 +4839,7 @@
 		</item>
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">77</property>
+			<property name="mainmenuid">81</property>
 			<label>$VAR[PVRLabel]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -4600,7 +4858,7 @@
 		</item>
 		<item id="6">
 			<property name="id">$NUMBER[6]</property>
-			<property name="mainmenuid">77</property>
+			<property name="mainmenuid">81</property>
 			<label>$LOCALIZE[19017]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -4619,7 +4877,7 @@
 		</item>
 		<item id="7">
 			<property name="id">$NUMBER[7]</property>
-			<property name="mainmenuid">77</property>
+			<property name="mainmenuid">81</property>
 			<label>$LOCALIZE[2]</label>
 			<label2 />
 			<icon>$VAR[MainMenuMusicHubIcon]</icon>
@@ -4670,7 +4928,7 @@
 		</item>
 		<item id="8">
 			<property name="id">$NUMBER[8]</property>
-			<property name="mainmenuid">77</property>
+			<property name="mainmenuid">81</property>
 			<label>$LOCALIZE[20389]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -4689,7 +4947,7 @@
 		</item>
 		<item id="9">
 			<property name="id">$NUMBER[9]</property>
-			<property name="mainmenuid">77</property>
+			<property name="mainmenuid">81</property>
 			<label>$VAR[CustomHubHeadline]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -4708,7 +4966,25 @@
 		</item>
 		<item id="10">
 			<property name="id">$NUMBER[10]</property>
-			<property name="mainmenuid">77</property>
+			<property name="mainmenuid">81</property>
+			<label>$LOCALIZE[1036]</label>
+			<label2 />
+			<icon>defaultfavourites.png</icon>
+			<thumb />
+			<property name="labelID">1036</property>
+			<property name="defaultID">1036</property>
+			<property name="translatedPath">favourites://</property>
+			<onclick condition="true">Dialog.Close(all,true)</onclick>
+			<onclick>ActivateWindow(favourites)</onclick>
+			<property name="path">ActivateWindow(favourites)</property>
+			<property name="list">favourites</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="group">sidepanel</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="11">
+			<property name="id">$NUMBER[11]</property>
+			<property name="mainmenuid">81</property>
 			<label>$LOCALIZE[24001]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -4724,9 +5000,9 @@
 			<property name="group">sidepanel</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="11">
-			<property name="id">$NUMBER[11]</property>
-			<property name="mainmenuid">77</property>
+		<item id="12">
+			<property name="id">$NUMBER[12]</property>
+			<property name="mainmenuid">81</property>
 			<label>$LOCALIZE[20244]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -4743,9 +5019,9 @@
 			<property name="group">sidepanel</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="12">
-			<property name="id">$NUMBER[12]</property>
-			<property name="mainmenuid">77</property>
+		<item id="13">
+			<property name="id">$NUMBER[13]</property>
+			<property name="mainmenuid">81</property>
 			<label>$LOCALIZE[8]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -4762,9 +5038,27 @@
 			<property name="group">sidepanel</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="13">
-			<property name="id">$NUMBER[13]</property>
-			<property name="mainmenuid">77</property>
+		<item id="14">
+			<property name="id">$NUMBER[14]</property>
+			<property name="mainmenuid">81</property>
+			<label>music</label>
+			<label2>音乐插件</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>thumb</thumb>
+			<property name="labelID">plugin.audio.music</property>
+			<property name="defaultID">plugin.audio.music</property>
+			<property name="translatedPath">ActivateWindow(Music,"plugin://plugin.audio.music",return)</property>
+			<onclick condition="true">Dialog.Close(all,true)</onclick>
+			<onclick>ActivateWindow(Music,"plugin://plugin.audio.music",return)</onclick>
+			<property name="path">ActivateWindow(Music,"plugin://plugin.audio.music",return)</property>
+			<property name="list">plugin://plugin.audio.music</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="group">sidepanel</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="15">
+			<property name="id">$NUMBER[15]</property>
+			<property name="mainmenuid">81</property>
 			<label>$LOCALIZE[799]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -4791,7 +5085,7 @@
 	<include name="skinshortcuts-group-alt-sidepanel">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">77</property>
+			<property name="mainmenuid">81</property>
 			<label>$VAR[MovieHubHeadline]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -4842,7 +5136,7 @@
 		</item>
 		<item id="2">
 			<property name="id">$NUMBER[2]</property>
-			<property name="mainmenuid">77</property>
+			<property name="mainmenuid">81</property>
 			<label>$LOCALIZE[31169]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -4861,7 +5155,7 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<property name="mainmenuid">77</property>
+			<property name="mainmenuid">81</property>
 			<label>$VAR[TVShowHubHeadline]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -4912,7 +5206,7 @@
 		</item>
 		<item id="4">
 			<property name="id">$NUMBER[4]</property>
-			<property name="mainmenuid">77</property>
+			<property name="mainmenuid">81</property>
 			<label>$LOCALIZE[3]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -4930,7 +5224,7 @@
 		</item>
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
-			<property name="mainmenuid">77</property>
+			<property name="mainmenuid">81</property>
 			<label>$VAR[PVRLabel]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -4949,7 +5243,7 @@
 		</item>
 		<item id="6">
 			<property name="id">$NUMBER[6]</property>
-			<property name="mainmenuid">77</property>
+			<property name="mainmenuid">81</property>
 			<label>$LOCALIZE[19017]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -4968,7 +5262,7 @@
 		</item>
 		<item id="7">
 			<property name="id">$NUMBER[7]</property>
-			<property name="mainmenuid">77</property>
+			<property name="mainmenuid">81</property>
 			<label>$LOCALIZE[2]</label>
 			<label2 />
 			<icon>$VAR[MainMenuMusicHubIcon]</icon>
@@ -5019,7 +5313,7 @@
 		</item>
 		<item id="8">
 			<property name="id">$NUMBER[8]</property>
-			<property name="mainmenuid">77</property>
+			<property name="mainmenuid">81</property>
 			<label>$LOCALIZE[20389]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -5038,7 +5332,7 @@
 		</item>
 		<item id="9">
 			<property name="id">$NUMBER[9]</property>
-			<property name="mainmenuid">77</property>
+			<property name="mainmenuid">81</property>
 			<label>$VAR[CustomHubHeadline]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -5057,7 +5351,25 @@
 		</item>
 		<item id="10">
 			<property name="id">$NUMBER[10]</property>
-			<property name="mainmenuid">77</property>
+			<property name="mainmenuid">81</property>
+			<label>$LOCALIZE[1036]</label>
+			<label2 />
+			<icon>defaultfavourites.png</icon>
+			<thumb />
+			<property name="labelID">1036</property>
+			<property name="defaultID">1036</property>
+			<property name="translatedPath">favourites://</property>
+			<onclick condition="true">Dialog.Close(all,true)</onclick>
+			<onclick>ActivateWindow(favourites)</onclick>
+			<property name="path">ActivateWindow(favourites)</property>
+			<property name="list">favourites</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),sidepanel)</visible>
+			<property name="group">sidepanel</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="11">
+			<property name="id">$NUMBER[11]</property>
+			<property name="mainmenuid">81</property>
 			<label>$LOCALIZE[24001]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -5073,9 +5385,9 @@
 			<property name="group">sidepanel</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="11">
-			<property name="id">$NUMBER[11]</property>
-			<property name="mainmenuid">77</property>
+		<item id="12">
+			<property name="id">$NUMBER[12]</property>
+			<property name="mainmenuid">81</property>
 			<label>$LOCALIZE[20244]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -5092,9 +5404,9 @@
 			<property name="group">sidepanel</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="12">
-			<property name="id">$NUMBER[12]</property>
-			<property name="mainmenuid">77</property>
+		<item id="13">
+			<property name="id">$NUMBER[13]</property>
+			<property name="mainmenuid">81</property>
 			<label>$LOCALIZE[8]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -5111,9 +5423,27 @@
 			<property name="group">sidepanel</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="13">
-			<property name="id">$NUMBER[13]</property>
-			<property name="mainmenuid">77</property>
+		<item id="14">
+			<property name="id">$NUMBER[14]</property>
+			<property name="mainmenuid">81</property>
+			<label>music</label>
+			<label2>音乐插件</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>thumb</thumb>
+			<property name="labelID">plugin.audio.music</property>
+			<property name="defaultID">plugin.audio.music</property>
+			<property name="translatedPath">ActivateWindow(Music,"plugin://plugin.audio.music",return)</property>
+			<onclick condition="true">Dialog.Close(all,true)</onclick>
+			<onclick>ActivateWindow(Music,"plugin://plugin.audio.music",return)</onclick>
+			<property name="path">ActivateWindow(Music,"plugin://plugin.audio.music",return)</property>
+			<property name="list">plugin://plugin.audio.music</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),sidepanel)</visible>
+			<property name="group">sidepanel</property>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="15">
+			<property name="id">$NUMBER[15]</property>
+			<property name="mainmenuid">81</property>
 			<label>$LOCALIZE[799]</label>
 			<label2 />
 			<icon>DefaultShortcut.png</icon>
@@ -5145,17 +5475,9 @@
 			<include>HiddenObject</include>
 			<content sortby="random" limit="4">-</content>
 		</control>
-		<control type="list" id="43432">
-			<include>HiddenObject</include>
-			<content sortby="random" limit="4">videodb://movies/titles/</content>
-		</control>
 		<control type="list" id="43433">
 			<include>HiddenObject</include>
 			<content sortby="random" limit="4">videodb://movies/sets/</content>
-		</control>
-		<control type="list" id="43434">
-			<include>HiddenObject</include>
-			<content sortby="random" limit="4">videodb://tvshows/titles/</content>
 		</control>
 		<control type="list" id="43435">
 			<include>HiddenObject</include>
@@ -5494,6 +5816,22 @@
 		<control type="list" id="434368">
 			<include>HiddenObject</include>
 			<content sortby="random" limit="4">videodb://musicvideos/titles/</content>
+		</control>
+		<control type="list" id="434372">
+			<include>HiddenObject</include>
+			<content sortby="random" limit="4">plugin://plugin.audio.music163</content>
+		</control>
+		<control type="list" id="434373">
+			<include>HiddenObject</include>
+			<content sortby="random" limit="4">plugin://plugin.video.bili</content>
+		</control>
+		<control type="list" id="434374">
+			<include>HiddenObject</include>
+			<content sortby="random" limit="4">plugin://plugin.video.youtube</content>
+		</control>
+		<control type="list" id="434375">
+			<include>HiddenObject</include>
+			<content sortby="random" limit="4">plugin://plugin.audio.music</content>
 		</control>
 	</include>
 </includes>
