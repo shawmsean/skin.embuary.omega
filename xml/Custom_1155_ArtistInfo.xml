@@ -42,7 +42,7 @@
                 <right>340</right>
                 <left>0</left>
                 <centertop>125</centertop>
-                <height>340</height>
+                <height>400</height>
 
                 <control type="label">
                     <left>0</left>
@@ -56,21 +56,12 @@
                 <control type="textbox">
                     <left>0</left>
                     <top>70</top>
-                    <height>220</height>
+                    <height>280</height>
                     <width>100%</width>
                     <font>Reg20</font>
                     <textcolor>text_sublabel</textcolor>
                     <label>$INFO[Window(10000).Property(nc_current_artist_desc)]</label>
                     <autoscroll delay="5000" time="2000" repeat="10000">!Control.HasFocus(8000)</autoscroll>
-                </control>
-
-                <control type="label">
-                    <left>0</left>
-                    <top>300</top>
-                    <height>25</height>
-                    <font>Reg18</font>
-                    <textcolor>text_sublabel</textcolor>
-                    <label>$INFO[Window(10000).Property(nc_current_artist_stats)]</label>
                 </control>
             </control>
         </control>
@@ -91,14 +82,19 @@
                 <scrolltime>300</scrolltime>
 
                 <control type="group">
-                    <height>310</height>
+                    <height>340</height>
                     <control type="label">
-                        <left>0</left><top>0</top><width>auto</width><height>30</height>
+                        <left>0</left><top>0</top><width>auto</width><height>25</height>
+                        <font>Reg18</font><textcolor>text_sublabel</textcolor>
+                        <label>$INFO[Window(10000).Property(nc_current_artist_stats)]</label>
+                    </control>
+                    <control type="label">
+                        <left>0</left><top>28</top><width>auto</width><height>30</height>
                         <font>Reg28</font><textcolor>text_white</textcolor>
                         <label>热门50首</label>
                     </control>
                     <control type="fixedlist" id="5001">
-                        <left>0</left><right>0</right><top>40</top><bottom>0</bottom>
+                        <left>0</left><right>0</right><top>68</top><bottom>0</bottom>
                         <orientation>horizontal</orientation>
                         <scrolltime>300</scrolltime>
                         <focusposition>0</focusposition>
