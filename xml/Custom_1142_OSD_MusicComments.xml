@@ -120,23 +120,23 @@
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
-                            <left>60</left><top>58</top><width>230</width><height>18</height>
+                            <left>60</left><top>64</top><width>230</width><height>18</height>
                             <font>Reg16</font><textcolor>text_sublabel</textcolor>
                             <label>$INFO[ListItem.Property(comment_time)]$INFO[ListItem.Property(comment_location), | ,]</label>
                         </control>
                         <control type="textbox">
-                            <left>10</left><top>86</top><width>280</width><bottom>44</bottom>
+                            <left>10</left><top>92</top><width>280</width><bottom>48</bottom>
                             <font>Reg16</font><textcolor>white</textcolor>
                             <label>$INFO[ListItem.Property(comment_content)]</label>
                             <autoscroll delay="6000" time="3000" repeat="10000">!Control.HasFocus(9801)</autoscroll>
                         </control>
                         <control type="label">
-                            <left>10</left><bottom>10</bottom><width>auto</width><height>16</height>
+                            <left>10</left><bottom>12</bottom><width>auto</width><height>16</height>
                             <font>Reg16</font><textcolor>text_sublabel</textcolor>
                             <label>$INFO[ListItem.Property(comment_liked_count),&#x2764; ,]$INFO[ListItem.Property(comment_reply_count), | , r]</label>
                         </control>
                         <control type="label" condition="!String.IsEmpty(ListItem.Property(comment_reply_summary))">
-                            <left>10</left><bottom>30</bottom><width>280</width><height>16</height>
+                            <left>10</left><bottom>34</bottom><width>280</width><height>16</height>
                             <font>Reg16</font><textcolor>softgrey</textcolor>
                             <label>$INFO[ListItem.Property(comment_reply_summary),&#x21AA; ,]</label>
                         </control>
@@ -168,23 +168,23 @@
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
-                            <left>60</left><top>58</top><width>230</width><height>18</height>
+                            <left>60</left><top>64</top><width>230</width><height>18</height>
                             <font>Reg16</font><textcolor>selected</textcolor>
                             <label>$INFO[ListItem.Property(comment_time)]$INFO[ListItem.Property(comment_location), | ,]</label>
                         </control>
                         <control type="textbox">
-                            <left>10</left><top>86</top><width>280</width><bottom>44</bottom>
+                            <left>10</left><top>92</top><width>280</width><bottom>48</bottom>
                             <font>Reg16</font><textcolor>white</textcolor>
                             <label>$INFO[ListItem.Property(comment_content)]</label>
                             <autoscroll delay="6000" time="3000" repeat="10000">!Control.HasFocus(9801)</autoscroll>
                         </control>
                         <control type="label">
-                            <left>10</left><bottom>10</bottom><width>auto</width><height>16</height>
+                            <left>10</left><bottom>12</bottom><width>auto</width><height>16</height>
                             <font>Reg16</font><textcolor>selected</textcolor>
                             <label>$INFO[ListItem.Property(comment_liked_count),&#x2764; ,]$INFO[ListItem.Property(comment_reply_count), | , r]</label>
                         </control>
                         <control type="label" condition="!String.IsEmpty(ListItem.Property(comment_reply_summary))">
-                            <left>10</left><bottom>30</bottom><width>280</width><height>16</height>
+                            <left>10</left><bottom>34</bottom><width>280</width><height>16</height>
                             <font>Reg16</font><textcolor>selected</textcolor>
                             <label>$INFO[ListItem.Property(comment_reply_summary),&#x21AA; ,]</label>
                         </control>
@@ -238,23 +238,23 @@
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
-                            <left>60</left><top>34</top><width>230</width><height>18</height>
+                            <left>60</left><top>40</top><width>230</width><height>18</height>
                             <font>Reg16</font><textcolor>text_sublabel</textcolor>
                             <label>$INFO[ListItem.Property(comment_time)]$INFO[ListItem.Property(comment_location), | ,]</label>
                         </control>
                         <control type="textbox">
-                            <left>10</left><top>62</top><width>280</width><bottom>44</bottom>
+                            <left>10</left><top>68</top><width>280</width><bottom>48</bottom>
                             <font>Reg16</font><textcolor>white</textcolor>
                             <label>$INFO[ListItem.Property(comment_content)]</label>
                             <autoscroll delay="6000" time="3000" repeat="10000">!Control.HasFocus(9802)</autoscroll>
                         </control>
                         <control type="label">
-                            <left>10</left><bottom>10</bottom><width>auto</width><height>16</height>
+                            <left>10</left><bottom>12</bottom><width>auto</width><height>16</height>
                             <font>Reg16</font><textcolor>text_sublabel</textcolor>
                             <label>$INFO[ListItem.Property(comment_liked_count),&#x2764; ,]$INFO[ListItem.Property(comment_reply_count), | , r]</label>
                         </control>
                         <control type="label" condition="!String.IsEmpty(ListItem.Property(comment_reply_summary))">
-                            <left>10</left><bottom>30</bottom><width>280</width><height>16</height>
+                            <left>10</left><bottom>34</bottom><width>280</width><height>16</height>
                             <font>Reg16</font><textcolor>softgrey</textcolor>
                             <label>$INFO[ListItem.Property(comment_reply_summary),&#x21AA; ,]</label>
                         </control>
@@ -281,23 +281,23 @@
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
-                            <left>60</left><top>34</top><width>230</width><height>18</height>
+                            <left>60</left><top>40</top><width>230</width><height>18</height>
                             <font>Reg16</font><textcolor>selected</textcolor>
                             <label>$INFO[ListItem.Property(comment_time)]$INFO[ListItem.Property(comment_location), | ,]</label>
                         </control>
                         <control type="textbox">
-                            <left>10</left><top>62</top><width>280</width><bottom>44</bottom>
+                            <left>10</left><top>68</top><width>280</width><bottom>48</bottom>
                             <font>Reg16</font><textcolor>white</textcolor>
                             <label>$INFO[ListItem.Property(comment_content)]</label>
                             <autoscroll delay="6000" time="3000" repeat="10000">!Control.HasFocus(9802)</autoscroll>
                         </control>
                         <control type="label">
-                            <left>10</left><bottom>10</bottom><width>auto</width><height>16</height>
+                            <left>10</left><bottom>12</bottom><width>auto</width><height>16</height>
                             <font>Reg16</font><textcolor>selected</textcolor>
                             <label>$INFO[ListItem.Property(comment_liked_count),&#x2764; ,]$INFO[ListItem.Property(comment_reply_count), | , r]</label>
                         </control>
                         <control type="label" condition="!String.IsEmpty(ListItem.Property(comment_reply_summary))">
-                            <left>10</left><bottom>30</bottom><width>280</width><height>16</height>
+                            <left>10</left><bottom>34</bottom><width>280</width><height>16</height>
                             <font>Reg16</font><textcolor>selected</textcolor>
                             <label>$INFO[ListItem.Property(comment_reply_summary),&#x21AA; ,]</label>
                         </control>
