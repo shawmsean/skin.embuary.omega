@@ -84,7 +84,7 @@
                     </control>
                     <control type="textbox">
                         <visible>!String.IsEqual(ListItem.Property(is_trigger),1)</visible>
-                        <left>60</left><top>48</top><right>10</right><bottom>6</bottom>
+                        <left>60</left><top>54</top><right>10</right><bottom>6</bottom>
                         <font>Reg16</font><textcolor>white</textcolor>
                         <label>$INFO[ListItem.Property(reply_content)]</label>
                         <autoscroll delay="6000" time="3000" repeat="10000">!Control.HasFocus(7001)</autoscroll>
@@ -134,7 +134,7 @@
                     </control>
                     <control type="textbox">
                         <visible>!String.IsEqual(ListItem.Property(is_trigger),1)</visible>
-                        <left>60</left><top>48</top><right>10</right><bottom>6</bottom>
+                        <left>60</left><top>54</top><right>10</right><bottom>6</bottom>
                         <font>Reg16</font><textcolor>white</textcolor>
                         <label>$INFO[ListItem.Property(reply_content)]</label>
                         <autoscroll delay="6000" time="3000" repeat="10000">!Control.HasFocus(7001)</autoscroll>
