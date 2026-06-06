@@ -59,19 +59,19 @@
                             <aspectratio>scale</aspectratio>
                         </control>
                         <control type="label">
-                            <left>8</left><top>208</top><width>194</width><height>30</height>
-                            <font>Reg22</font><textcolor>text_white</textcolor>
+                            <left>8</left><top>206</top><width>194</width><height>22</height>
+                            <font>Reg18</font><textcolor>text_white</textcolor>
                             <label>$INFO[ListItem.Label]</label>
                             <scroll>true</scroll>
                         </control>
                         <control type="label">
-                            <left>8</left><top>235</top><width>194</width><height>25</height>
-                            <font>Reg18</font><textcolor>text_sublabel</textcolor>
+                            <left>8</left><top>232</top><width>194</width><height>20</height>
+                            <font>Reg16</font><textcolor>text_sublabel</textcolor>
                             <label>$INFO[ListItem.Artist]</label>
                         </control>
                         <control type="label">
-                            <left>8</left><top>258</top><width>194</width><height>20</height>
-                            <font>Reg18</font><textcolor>text_sublabel</textcolor>
+                            <left>8</left><top>256</top><width>194</width><height>18</height>
+                            <font>Reg16</font><textcolor>text_sublabel</textcolor>
                             <label>$INFO[ListItem.Duration]</label>
                         </control>
                     </itemlayout>
@@ -86,19 +86,19 @@
                             <aspectratio>scale</aspectratio>
                         </control>
                         <control type="label">
-                            <left>8</left><top>208</top><width>194</width><height>30</height>
-                            <font>Reg22</font><textcolor>selected</textcolor>
+                            <left>8</left><top>206</top><width>194</width><height>22</height>
+                            <font>Reg18</font><textcolor>selected</textcolor>
                             <label>$INFO[ListItem.Label]</label>
                             <scroll>true</scroll>
                         </control>
                         <control type="label">
-                            <left>8</left><top>235</top><width>194</width><height>25</height>
-                            <font>Reg18</font><textcolor>selected</textcolor>
+                            <left>8</left><top>232</top><width>194</width><height>20</height>
+                            <font>Reg16</font><textcolor>selected</textcolor>
                             <label>$INFO[ListItem.Artist]</label>
                         </control>
                         <control type="label">
-                            <left>8</left><top>258</top><width>194</width><height>20</height>
-                            <font>Reg18</font><textcolor>selected</textcolor>
+                            <left>8</left><top>256</top><width>194</width><height>18</height>
+                            <font>Reg16</font><textcolor>selected</textcolor>
                             <label>$INFO[ListItem.Duration]</label>
                         </control>
                     </focusedlayout>
@@ -114,12 +114,12 @@
                     </control>
                     <control type="label">
                         <left>70</left><top>0</top><width>auto</width><height>25</height>
-                        <font>Reg24</font><textcolor>text_white</textcolor>
+                        <font>Reg22</font><textcolor>text_white</textcolor>
                         <label>$INFO[Container(7000).ListItem.Label]</label>
                     </control>
                     <control type="label">
                         <left>70</left><top>25</top><width>auto</width><height>20</height>
-                        <font>Reg20</font><textcolor>text_sublabel</textcolor>
+                        <font>Reg18</font><textcolor>text_sublabel</textcolor>
                         <label>$INFO[Container(7000).ListItem.Artist]</label>
                     </control>
                 </control>

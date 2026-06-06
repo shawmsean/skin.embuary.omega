@@ -118,14 +118,14 @@
                                 <aspectratio>scale</aspectratio>
                             </control>
                             <control type="label">
-                                <left>8</left><top>208</top><width>194</width><height>30</height>
-                                <font>Reg22</font><textcolor>text_white</textcolor>
+                                <left>8</left><top>206</top><width>194</width><height>24</height>
+                                <font>Reg18</font><textcolor>text_white</textcolor>
                                 <label>$INFO[ListItem.Label]</label>
                                 <scroll>true</scroll>
                             </control>
                             <control type="label">
-                                <left>8</left><top>238</top><width>194</width><height>25</height>
-                                <font>Reg18</font><textcolor>text_sublabel</textcolor>
+                                <left>8</left><top>234</top><width>194</width><height>24</height>
+                                <font>Reg16</font><textcolor>text_sublabel</textcolor>
                                 <label>$INFO[ListItem.Artist]</label>
                             </control>
                         </itemlayout>
@@ -140,14 +140,14 @@
                                 <aspectratio>scale</aspectratio>
                             </control>
                             <control type="label">
-                                <left>8</left><top>208</top><width>194</width><height>30</height>
-                                <font>Reg22</font><textcolor>selected</textcolor>
+                                <left>8</left><top>206</top><width>194</width><height>24</height>
+                                <font>Reg18</font><textcolor>selected</textcolor>
                                 <label>$INFO[ListItem.Label]</label>
                                 <scroll>true</scroll>
                             </control>
                             <control type="label">
-                                <left>8</left><top>238</top><width>194</width><height>25</height>
-                                <font>Reg18</font><textcolor>selected</textcolor>
+                                <left>8</left><top>234</top><width>194</width><height>24</height>
+                                <font>Reg16</font><textcolor>selected</textcolor>
                                 <label>$INFO[ListItem.Artist]</label>
                             </control>
                         </focusedlayout>
@@ -182,14 +182,14 @@
                                 <aspectratio>scale</aspectratio>
                             </control>
                             <control type="label">
-                                <left>8</left><top>208</top><width>194</width><height>30</height>
-                                <font>Reg22</font><textcolor>text_white</textcolor>
+                                <left>8</left><top>206</top><width>194</width><height>24</height>
+                                <font>Reg18</font><textcolor>text_white</textcolor>
                                 <label>$INFO[ListItem.Label]</label>
                                 <scroll>true</scroll>
                             </control>
                             <control type="label">
-                                <left>8</left><top>238</top><width>194</width><height>25</height>
-                                <font>Reg18</font><textcolor>text_sublabel</textcolor>
+                                <left>8</left><top>234</top><width>194</width><height>24</height>
+                                <font>Reg16</font><textcolor>text_sublabel</textcolor>
                                 <label>$INFO[ListItem.Artist]</label>
                             </control>
                         </itemlayout>
@@ -204,14 +204,14 @@
                                 <aspectratio>scale</aspectratio>
                             </control>
                             <control type="label">
-                                <left>8</left><top>208</top><width>194</width><height>30</height>
-                                <font>Reg22</font><textcolor>selected</textcolor>
+                                <left>8</left><top>206</top><width>194</width><height>24</height>
+                                <font>Reg18</font><textcolor>selected</textcolor>
                                 <label>$INFO[ListItem.Label]</label>
                                 <scroll>true</scroll>
                             </control>
                             <control type="label">
-                                <left>8</left><top>238</top><width>194</width><height>25</height>
-                                <font>Reg18</font><textcolor>selected</textcolor>
+                                <left>8</left><top>234</top><width>194</width><height>24</height>
+                                <font>Reg16</font><textcolor>selected</textcolor>
                                 <label>$INFO[ListItem.Artist]</label>
                             </control>
                         </focusedlayout>
@@ -246,14 +246,14 @@
                                 <aspectratio>scale</aspectratio>
                             </control>
                             <control type="label">
-                                <left>8</left><top>208</top><width>194</width><height>30</height>
-                                <font>Reg22</font><textcolor>text_white</textcolor>
+                                <left>8</left><top>206</top><width>194</width><height>24</height>
+                                <font>Reg18</font><textcolor>text_white</textcolor>
                                 <label>$INFO[ListItem.Label]</label>
                                 <scroll>true</scroll>
                             </control>
                             <control type="label">
-                                <left>8</left><top>238</top><width>194</width><height>25</height>
-                                <font>Reg18</font><textcolor>text_sublabel</textcolor>
+                                <left>8</left><top>234</top><width>194</width><height>24</height>
+                                <font>Reg16</font><textcolor>text_sublabel</textcolor>
                                 <label>$INFO[ListItem.Artist]</label>
                             </control>
                         </itemlayout>
@@ -268,14 +268,14 @@
                                 <aspectratio>scale</aspectratio>
                             </control>
                             <control type="label">
-                                <left>8</left><top>208</top><width>194</width><height>30</height>
-                                <font>Reg22</font><textcolor>selected</textcolor>
+                                <left>8</left><top>206</top><width>194</width><height>24</height>
+                                <font>Reg18</font><textcolor>selected</textcolor>
                                 <label>$INFO[ListItem.Label]</label>
                                 <scroll>true</scroll>
                             </control>
                             <control type="label">
-                                <left>8</left><top>238</top><width>194</width><height>25</height>
-                                <font>Reg18</font><textcolor>selected</textcolor>
+                                <left>8</left><top>234</top><width>194</width><height>24</height>
+                                <font>Reg16</font><textcolor>selected</textcolor>
                                 <label>$INFO[ListItem.Artist]</label>
                             </control>
                         </focusedlayout>
@@ -310,14 +310,14 @@
                                 <aspectratio>scale</aspectratio>
                             </control>
                             <control type="label">
-                                <left>8</left><top>195</top><width>404</width><height>30</height>
-                                <font>Reg22</font><textcolor>text_white</textcolor>
+                                <left>8</left><top>193</top><width>404</width><height>24</height>
+                                <font>Reg18</font><textcolor>text_white</textcolor>
                                 <label>$INFO[ListItem.Label]</label>
                                 <scroll>true</scroll>
                             </control>
                             <control type="label">
-                                <left>8</left><top>225</top><width>404</width><height>25</height>
-                                <font>Reg18</font><textcolor>text_sublabel</textcolor>
+                                <left>8</left><top>221</top><width>404</width><height>24</height>
+                                <font>Reg16</font><textcolor>text_sublabel</textcolor>
                                 <label>$INFO[ListItem.Artist]</label>
                             </control>
                         </itemlayout>
@@ -332,14 +332,14 @@
                                 <aspectratio>scale</aspectratio>
                             </control>
                             <control type="label">
-                                <left>8</left><top>195</top><width>404</width><height>30</height>
-                                <font>Reg22</font><textcolor>selected</textcolor>
+                                <left>8</left><top>193</top><width>404</width><height>24</height>
+                                <font>Reg18</font><textcolor>selected</textcolor>
                                 <label>$INFO[ListItem.Label]</label>
                                 <scroll>true</scroll>
                             </control>
                             <control type="label">
-                                <left>8</left><top>225</top><width>404</width><height>25</height>
-                                <font>Reg18</font><textcolor>selected</textcolor>
+                                <left>8</left><top>221</top><width>404</width><height>24</height>
+                                <font>Reg16</font><textcolor>selected</textcolor>
                                 <label>$INFO[ListItem.Artist]</label>
                             </control>
                         </focusedlayout>
@@ -379,8 +379,8 @@
                                 <aspectratio scalediffuse="false">scale</aspectratio>
                             </control>
                             <control type="label">
-                                <left>8</left><top>160</top><width>194</width><height>30</height>
-                                <font>Reg22</font><textcolor>text_white</textcolor>
+                                <left>8</left><top>160</top><width>194</width><height>24</height>
+                                <font>Reg18</font><textcolor>text_white</textcolor>
                                 <label>$INFO[ListItem.Label]</label>
                                 <align>center</align>
                             </control>
@@ -396,8 +396,8 @@
                                 <aspectratio scalediffuse="false">scale</aspectratio>
                             </control>
                             <control type="label">
-                                <left>8</left><top>160</top><width>194</width><height>30</height>
-                                <font>Reg22</font><textcolor>selected</textcolor>
+                                <left>8</left><top>160</top><width>194</width><height>24</height>
+                                <font>Reg18</font><textcolor>selected</textcolor>
                                 <label>$INFO[ListItem.Label]</label>
                                 <align>center</align>
                             </control>
